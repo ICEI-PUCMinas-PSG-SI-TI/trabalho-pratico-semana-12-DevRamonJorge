@@ -23,9 +23,8 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ### ✅ Print da aba NETWORK com requisições Fetch/XHR
 📷 Inclua aqui uma captura de tela do painel Network do navegador após ações como listar ou cadastrar usuários:
-
-![Print da Network](./prints/network-fetch.png)
-
+![alt text](image-5.png)
+![alt text](image-6.png)
 ---
 
 ## Estrutura de Dados Utilizada (`db/db.json`)
