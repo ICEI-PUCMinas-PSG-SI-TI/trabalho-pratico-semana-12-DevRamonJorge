@@ -1,7 +1,6 @@
+# Trabalho Prático - Semana 11
 
-# Trabalho Prático - Semana 12
-
-Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e alterar dados da entidade principal do do seu projeto a partir da estrutura criada na etapa anterior com o JSONServer. Para isso, crie uma **página de cadastro (cadastro_[ENTIDADE].html)**, que deve mostrar um formulário para cadastrar a entidade principal do projeto. OBS: Troque [ENTIDADE] pelo nome da sua entidade principal.
+Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenvolvimento mais completo, típico de equipes profissionais. Nesse processo, vamos utilizar um **servidor backend simulado** com o **JSON Server** baseado em APIs RESTful. Um arquivo JSON funcionará como banco de dados e será processado pelo JSON Server que expõe uma API RESTful no servidor.
 
 ## Informações do trabalho
 
@@ -10,17 +9,11 @@ Nesta atividade, você irá completar o projeto anterior permitindo cadastrar e 
 - Proposta de projeto escolhida:
 - Breve descrição sobre seu projeto:
 
-**Print do testes da API com Postman ou similar**
+**Print do teste da API com visualização do JSON**
 
-<<  COLOQUE A IMAGEM GET AQUI >>
+<<  COLOQUE A IMAGEM AQUI >>
 
-<<  COLOQUE A IMAGEM POST AQUI >>
-
-<<  COLOQUE A IMAGEM PUT AQUI >>
-
-<<  COLOQUE A IMAGEM DELETE AQUI >>
-
-**Print da aba NETWORK com requisições Fetch/XHR de POST**
+**Print da aba NETWORK com requisições Fetch/XHR**
 
 <<  COLOQUE A IMAGEM AQUI >>
 
@@ -57,9 +50,9 @@ Para iniciar o JSONServer e acessar os arquivos do seu site, siga os seguintes p
 4. Execute o comando `npm start`
    Isso vai executar o JSONServer e permitir que você consiga acessar o seu site no navegador.
 5. Para testar o projeto:
-   1. **Site Front End**: abra um navegador e acesse o seu site pela seguinte URL:
+   1. **Site Front End**: abra um navegador e acesse o seu site pela seguinte URL: 
       [http://localhost:3000]()
-   2. **Site Back End**: abra o navegador e acesse as informações da estrutura de usuários por meio da API REST do JSONServer a partir da seguinte URL:
+   2. **Site Back End**: abra o navegador e acesse as informações da estrutura de usuários por meio da API REST do JSONServer a partir da seguinte URL: 
       [http://localhost:3000/usuarios](http://localhost:3000/usuarios)
 
 Ao criar suas estruturas de dados no arquivo db.json, você poderá obter estes dados através do endereço: http://localhost:3000/SUA_ESTRUTURA, tal qual como foi feito com a estrutura de usuários. **IMPORTANTE**: Ao editar o arquivo db.json, é necessário parar e reiniciar o JSONServer.

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes do Usuário</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <h1>Detalhes do Usuário</h1>
+  <div id="detalhes"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    fetch(`http://localhost:3000/usuarios/${id}`)
+      .then(res => res.json())
+      .then(usuario => {
+        document.getElementById("detalhes").innerHTML = `
+          <h2>${usuario.nome}</h2>
+          <p><strong>Login:</strong> ${usuario.login}</p>
+          <p><strong>Email:</strong> ${usuario.email}</p>
+          <a href="index.html">Voltar</a>
+        `;
+      })
+      .catch(err => {
+        document.getElementById("detalhes").innerHTML = `<p>Usuário não encontrado.</p>`;
+        console.error(err);
+      });
+  </script>
+</body>
+</html>
